@@ -35,6 +35,7 @@
             txtAcc = new TextBox();
             txtPass = new TextBox();
             btnLogin = new Button();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -100,11 +101,25 @@
             btnLogin.UseVisualStyleBackColor = false;
             btnLogin.Click += btnLogin_Click;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.LightBlue;
+            button1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = Color.Violet;
+            button1.Location = new Point(342, 211);
+            button1.Name = "button1";
+            button1.Size = new Size(123, 48);
+            button1.TabIndex = 3;
+            button1.Text = "Login";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += btnLogin_Click;
+            // 
             // frmLogin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(551, 287);
+            Controls.Add(button1);
             Controls.Add(btnLogin);
             Controls.Add(txtPass);
             Controls.Add(txtAcc);
@@ -127,5 +142,6 @@
         private TextBox txtAcc;
         private TextBox txtPass;
         private Button btnLogin;
+        private Button button1;
     }
 }
