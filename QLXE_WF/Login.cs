@@ -23,7 +23,7 @@ namespace QLXE_WF
             {
                 MessageBox.Show("Not null or white space", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtAcc.Text = "";
-                txtPass.Text = "";
+                txtPass.Text = "  ";
                 return;
             }
             try
